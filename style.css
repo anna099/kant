@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lora');
 
 body {
-  background: #e7eaff;
   width: 60%;
   margin: 5% auto;
   font-family: 'Lora';
@@ -22,5 +21,8 @@ h1 {
 }
 
 h2 {
+  background: black;
+  color: white;
+  padding: 2px 4px;
   font-size: 16px;
 }
