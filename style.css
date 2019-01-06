@@ -1,14 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
 
 body {
   width: 60%;
   margin: 5% auto;
-  font-family: 'Lora';
+  font-family: 'Minion Pro', 'Source Serif Pro', serif;
 }
 
 p {
   margin-bottom: 15px;
-  font-size: 13px;
+  font-size: 14px;
+}
+
+ul {
+  font-size: 14px;
 }
 
 h1, h2 {
@@ -16,13 +20,13 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 20px;
-  font-style: italic;
+  font-size: 25px;
 }
 
 h2 {
-  background: black;
-  color: white;
-  padding: 2px 4px;
-  font-size: 16px;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 14px;
 }
