@@ -6,12 +6,16 @@ body {
   font-family: 'Minion Pro', 'Source Serif Pro', serif;
 }
 
+a, a:visited {
+  color: blue;
+}
+
 p {
   margin-bottom: 15px;
   font-size: 14px;
 }
 
-ul {
+ol, ul {
   font-size: 14px;
 }
 
