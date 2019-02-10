@@ -49,3 +49,12 @@ hr {
   border-bottom: 1px solid #e5e5e5;
   margin: 3px;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 90%;
+  }
+  blockquote {
+    font-size: 14px;
+  }
+}
