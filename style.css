@@ -7,6 +7,13 @@ body {
   font-family: 'Minion Pro', 'Source Serif Pro', serif;
 }
 
+img {
+  border: 1px solid black;
+  display: block;
+  width: 40%;
+  margin: 10px auto;
+}
+
 a, a:visited {
   color: blue;
 }
@@ -26,6 +33,10 @@ blockquote {
 
 ol, ul {
   font-size: 14px;
+}
+
+h1 {
+  text-align: center;
 }
 
 h1, h2 {
@@ -50,7 +61,7 @@ hr {
   margin: 3px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   body {
     width: 90%;
   }
