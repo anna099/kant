@@ -35,8 +35,12 @@ ol, ul {
   font-size: 14px;
 }
 
-h1 {
-  text-align: center;
+ol ol li {
+  list-style-type: lower-latin;
+}
+
+ol ol ol li {
+  list-style-type: upper-roman;
 }
 
 h1, h2 {
@@ -44,11 +48,12 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 23px;
+  font-weight: normal;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 h3 {
@@ -59,6 +64,21 @@ hr {
   border: none;
   border-bottom: 1px solid #e5e5e5;
   margin: 3px;
+}
+
+table {
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+td {
+  text-align: center;
+}
+
+#title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 800px) {
