@@ -88,6 +88,10 @@ code {
   font-weight: bold;
 }
 
+.confused {
+  color: maroon;
+}
+
 @media only screen and (max-width: 800px) {
   body {
     width: 90%;
