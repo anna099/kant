@@ -26,8 +26,6 @@ p {
 
 blockquote {
   font-size: 12px;
-  border-left: 1px solid #e5e5e5;
-  border-right: 1px solid #e5e5e5;
   padding: 0 5px;
   text-align: justify;
 }
@@ -95,8 +93,5 @@ code {
 @media only screen and (max-width: 800px) {
   body {
     width: 90%;
-  }
-  blockquote {
-    font-size: 14px;
   }
 }
