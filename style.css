@@ -42,6 +42,10 @@ ol ol ol li {
   list-style-type: upper-roman;
 }
 
+ol ol ol ol li {
+  list-style-type: lower-roman;
+}
+
 h1, h2 {
   margin: 0;
 }
@@ -92,9 +96,17 @@ caption {
   font-weight: bold;
 }
 
-.confused {
-  color: maroon;
+.bib { /* bibliography */
+  padding: 8px;
+  font-size: 13px;
+  background: #cef;
 }
+
+.bib ul {
+  margin: 0;
+  font-size: 13px;
+}
+
 
 @media only screen and (max-width: 800px) {
   body {
