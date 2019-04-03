@@ -34,18 +34,6 @@ ol, ul {
   font-size: 14px;
 }
 
-ol ol li {
-  list-style-type: lower-latin;
-}
-
-ol ol ol li {
-  list-style-type: upper-roman;
-}
-
-ol ol ol ol li {
-  list-style-type: lower-roman;
-}
-
 h1, h2 {
   margin: 0;
 }
@@ -60,7 +48,7 @@ h2 {
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 12pt;
 }
 
 hr {
@@ -94,6 +82,22 @@ caption {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
+}
+
+#a-deduc {
+  border: 2px solid yellowgreen;
+  padding: 4px;
+  margin: 8px 0;
+}
+
+#b-deduc {
+  border: 2px solid cornflowerblue;
+  padding: 4px;
+  margin: 8px 0;
+}
+
+.unsure {
+  color: #700;
 }
 
 .bib { /* bibliography */
