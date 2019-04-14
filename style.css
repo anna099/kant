@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 body {
-  color: black;
-  width: 60%;
-  margin: 5% auto;
-  font-family: 'Minion Pro', 'Source Serif Pro', serif;
-  line-height: 1.3em;
+  background: #f2ece8;
+  color: #1a1a1a;
+  font-family: serif;
+  line-height: 1.4em;
 }
 
 img {
@@ -16,41 +15,43 @@ img {
   margin: 10px auto;
 }
 
+#content {
+  margin: 0 auto;
+  width: 60%;
+  padding: 2em;
+  background: white;
+  border: 1px solid #d8d8d8;
+}
+
 a, a:visited {
   color: blue;
 }
 
 p {
-  margin-bottom: 15px;
-  text-align: justify;
-  font-size: 14px;
+  margin-bottom: 0 0 10px;
 }
 
 blockquote {
-  font-size: 12px;
-  padding: 0 5px;
-  text-align: justify;
+  margin: 1em;
 }
 
-ol, ul {
-  font-size: 14px;
-}
-
-h1, h2 {
-  margin: 0;
+h1, h2, h3, h4 {
+  color: black;
+  font-family: 'Source Sans Pro';
+  font-weight: normal;
+  margin: 10px 0;
 }
 
 h1 {
-  font-size: 23px;
-  font-weight: normal;
+  font-size: 1.6em;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 1.5em;
 }
 
-h3 {
-  font-size: 12pt;
+h3, h4 {
+  font-size: 1.2em;
 }
 
 hr {
@@ -61,7 +62,7 @@ hr {
 
 table {
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 td {
@@ -70,7 +71,7 @@ td {
 }
 
 code {
-  font-size: 12px;
+  font-size: 13px;
   color: grey;
   font-family: 'Inconsolata', monospace;
 }
@@ -81,21 +82,35 @@ caption {
 }
 
 #title {
-  font-size: 30px;
+  font-size: 31px;
   text-align: center;
   font-weight: bold;
 }
 
-#a-deduc {
-  border: 2px solid yellowgreen;
-  padding: 4px;
-  margin: 8px 0;
+#tab-princ td {
+  height: 45px;
+  width: 120px;
 }
 
-#b-deduc {
-  border: 2px solid cornflowerblue;
-  padding: 4px;
-  margin: 8px 0;
+#nav {
+  position: fixed;
+  top: 10;
+  left: 10;
+  border: 1px solid lightgrey;
+  background: #efe;
+  padding: 5px;
+}
+
+#nav a {
+  display: block;
+  font-size: 13px;
+  text-decoration: none;
+  color: #00c;
+  font-weight: bold;
+}
+
+#nav a:hover {
+  text-decoration: underline;
 }
 
 .unsure {
@@ -104,18 +119,22 @@ caption {
 
 .bib { /* bibliography */
   padding: 8px;
-  font-size: 13px;
+  font-size: 14px;
   background: #cef;
 }
 
 .bib ul {
   margin: 0;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 
 @media only screen and (max-width: 800px) {
-  body {
+  #nav {
+    display: none;
+  }
+
+  #content {
     width: 90%;
   }
 }
