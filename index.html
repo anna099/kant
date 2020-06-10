@@ -1,15 +1,11 @@
 <link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="https://use.typekit.net/eny7olf.css">
 <title>Immanuel Kant</title>
 
 <body>
 
-<div id="content">
-<p id="title">The Critique of Pure Reason</p>
-
-<img src="kant.jpg" />
-
-<hr>
+<h4 id="author">Immanuel Kant</h4>
+<h1 id="title">The Critique of Pure Reason</h1>
 
 <div id="nav">
   <a href="#title">Top</a>
@@ -18,8 +14,7 @@
   <a href="#bottom">Bottom</a>
 </div>
 
-<ol>
-  <u>Contents:</u>
+<ol id="contents">
   <li><a href="#pref-a">Preface A</a></li>
   <li><a href="#pref-b">Preface B</a></li>
   <li><a href="#intro">Introduction</a></li>
@@ -41,10 +36,12 @@
             <li><a href="#ana-prin">The Analytic of Principles</a></li>
         </ol></li>
     </ol></li>
+  <li class="nonum"><a href="recap.html">(A summary of these notes is also in progress.)</a></li>
 </ol>
 
-<a href="recap.html">A summary of these notes is also in progress.</a>
-<hr>
+
+
+<section id="content">
 
 <h1 id="pref-a">Preface to the First Edition</h1>
 
@@ -2161,21 +2158,21 @@ mathematics that deals with <i>degrees</i> is necessarily applicable to
 experience.</p>
 
 <h4>Analogies of Experience.</h4>
-<p>The principle of the analogies of experience is that <b>experience is 
-possible only through the representation of a necessary connection of 
-perceptions</b>. Experience never consists of a completely individual perception; 
-rather, it is a synthesis of a manifold of perceptions. This synthesis is not 
-contained in perception – it is not the perceived objects themselves that 
-‘relate’ to one another inherently – but is carried out by the perceiver’s 
-consciousness, through the synthetic unity of the manifold. Since the state 
-of affairs presented in any experience is contingent, the necessity of the 
-synthesis that forms the experience must originate in the perceiver and not 
-in what is perceived. The synthesis can only be achieved in the first place 
-if the objects of perception are perceived as coincident in time and space, 
-and since time and space themselves cannot be perceived, the spatiotemporal 
-coincidence of the objects must originate in their mental 
+<p>The principle of the analogies of experience is that <b>experience is
+possible only through the representation of a necessary connection of
+perceptions</b>. Experience never consists of a completely individual perception;
+rather, it is a synthesis of a manifold of perceptions. This synthesis is not
+contained in perception – it is not the perceived objects themselves that
+‘relate’ to one another inherently – but is carried out by the perceiver’s
+consciousness, through the synthetic unity of the manifold. Since the state
+of affairs presented in any experience is contingent, the necessity of the
+synthesis that forms the experience must originate in the perceiver and not
+in what is perceived. The synthesis can only be achieved in the first place
+if the objects of perception are perceived as coincident in time and space,
+and since time and space themselves cannot be perceived, the spatiotemporal
+coincidence of the objects must originate in their mental
 <i>representation</i>.</b></p>
 
 </div><span id="bottom"></span></body>
 
-<script>var x=document.createElement('p');x.style.color='lightgrey';x.innerText=document.body.innerText.split(' ').length+' words';document.body.appendChild(x)</script>
+<script> let c = 0, x = document.createElement('p'); x.id = 'wordcount'; document.querySelectorAll('p').forEach(x => c += x.innerText.split(' ').length); x.innerText = c + ' words'; document.body.appendChild(x) </script>

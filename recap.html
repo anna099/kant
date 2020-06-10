@@ -1,20 +1,17 @@
 <link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="https://use.typekit.net/eny7olf.css">
 <title>Immanuel Kant</title>
 
 <body>
 
-<div id="content">
 <p id="title">The Critique of Pure Reason (in Brief)</p>
 
-<img src="kant2.jpg" />
-
-<ol>
-    <u>Contents:</u>
+<ol id="contents">
     <li><a href="#pref">Prefaces A and B</a></li>
     <li><a href="#intr">Introduction</a></li>
 </ol>
 
+<section id="content">
 <h1 id="pref">Prefaces A and B</h1>
 <p>Humans always seem to push their capacity to reason further than it can
 actually go, thereby entering the arena of 'metaphysics'. Historically, this has
@@ -100,4 +97,4 @@ synthetic <i>a priori</i> is central to the <i>Critique</i>.
 
 </div><span id="bottom"></span></body>
 
-<script>var x=document.createElement('p');x.style.color='lightgrey';x.innerText=document.body.innerText.split(' ').length+' words';document.body.appendChild(x)</script>
+<script> let c = 0, x = document.createElement('p'); x.id = 'wordcount'; document.querySelectorAll('p').forEach(x => c += x.innerText.split(' ').length); x.innerText = c + ' words'; document.body.appendChild(x) </script>

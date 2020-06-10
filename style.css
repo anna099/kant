@@ -1,63 +1,170 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-
 body {
-  background: #f2ece8;
-  color: #1a1a1a;
-  font-family: serif;
-  line-height: 1.4em;
-}
+    width: 50%;
+    margin: 1% auto 1% auto;
+    padding: 20px 40px;
 
-img {
-  border: 1px solid black;
-  display: block;
-  width: 40%;
-  margin: 10px auto;
-}
+    background: #FAF5F3;
 
-#content {
-  margin: 0 auto;
-  width: 60%;
-  padding: 2em;
-  background: white;
-  border: 1px solid #d8d8d8;
-}
-
-a, a:visited {
-  color: blue;
+    font-family: adobe-garamond-pro, serif;
+    font-weight: 400;
 }
 
 p {
-  margin-bottom: 0 0 10px;
+    margin: 0 0 0.4em;
+    position: relative;
+
+    font-size: 1.1em;
+    line-height: 1.3em;
+    text-align: justify;
 }
 
-blockquote {
-  margin: 1em;
+#content {
+    width: 90%;
+    margin: 0 auto;
 }
 
-h1, h2, h3, h4 {
-  color: black;
-  font-family: 'Source Sans Pro';
-  font-weight: normal;
-  margin: 10px 0;
+#nav {
+    position: fixed;
+    top: 10;
+    left: 10;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.05);
+    padding: 5px;
+    text-align: center;
+    opacity: 0.2;
+}
+
+#nav a {
+    display: block;
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+}
+
+#nav:hover {
+    opacity: 1;
+}
+
+#nav a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+#title {
+    display: block;
+    width: 80%;
+    margin: 0 auto 40px auto;
+    padding: 0;
+
+    font-family: Optima;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px;
 }
 
 h1 {
-  font-size: 1.6em;
+    font-family: Optima;
+    font-size: 1.8em;
+    padding-top: 10px;
+    font-weight: 400;
 }
 
-h2 {
-  font-size: 1.5em;
+h3 {
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-variant: small-caps;
+    font-size: 1.3em;
+    text-transform: lowercase;
 }
 
-h3, h4 {
-  font-size: 1.2em;
+h4:not(#author) {
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-variant: small-caps;
+    font-size: 1.3em;
+    text-transform: lowercase;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: #515c94;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    margin: 10px 40px;
+}
+
+blockquote p {
+    font-size: 1.1em;
+    line-height: normal;
+}
+
+sup {
+    color: black;
+    font-size: 0.7em;
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
 }
 
 hr {
-  border: none;
-  border-bottom: 1px solid #e5e5e5;
-  margin: 3px;
+    width: 80%;
+    border: none;
+    border-top: 1px solid rgba(20, 20, 20, 0.2);
+}
+
+#author {
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#contents {
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 28px;
+}
+
+#contents li {
+    list-style-type: upper-roman;
+}
+
+#contents li li {
+    list-style-type: lower-roman;
+}
+
+#contents li li li {
+    list-style-type: lower-greek;
+}
+
+li.nonum,
+#contents li li li li {
+    list-style-type: none !important;
+}
+
+#contents a {
+    text-decoration: none;
+    color: black;
+}
+
+#contents a:hover {
+    background: rgba(3, 1, 1, 0.1);
+}
+
+#wordcount {
+    text-align: center;
+    color: #ccc;
+    margin-top: 4em;
 }
 
 table {
@@ -73,18 +180,7 @@ td {
 code {
   font-size: 13px;
   color: grey;
-  font-family: 'Inconsolata', monospace;
-}
-
-caption {
-  text-decoration: underline;
-  margin-bottom: 1em;
-}
-
-#title {
-  font-size: 31px;
-  text-align: center;
-  font-weight: bold;
+  font-family: anonymous-pro, monospace;
 }
 
 #tab-princ td {
@@ -92,49 +188,8 @@ caption {
   width: 120px;
 }
 
-#nav {
-  position: fixed;
-  top: 10;
-  left: 10;
-  border: 1px solid lightgrey;
-  background: #efe;
-  padding: 5px;
-}
-
-#nav a {
-  display: block;
-  font-size: 13px;
-  text-decoration: none;
-  color: #00c;
-  font-weight: bold;
-}
-
-#nav a:hover {
-  text-decoration: underline;
-}
-
-.unsure {
-  color: #700;
-}
-
-.bib { /* bibliography */
-  padding: 8px;
-  font-size: 14px;
-  background: #cef;
-}
-
-.bib ul {
-  margin: 0;
-  font-size: 14px;
-}
-
-
-@media only screen and (max-width: 800px) {
-  #nav {
-    display: none;
-  }
-
-  #content {
-    width: 90%;
-  }
+@media (max-width: 1000px) {
+    body {
+        width: 80%;
+    }
 }
